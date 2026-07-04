@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="auth-hash" content="275c74259807003b2b53eefc7b11854d387dd62c14179edc9a031ec9b671a2f6">
+<meta name="robots" content="noindex,nofollow">
+<title>内部资料 · 泰国西那瓦国际大学 | LazyFirst · studyAbroad</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei","Helvetica Neue",sans-serif;background:#f5f7fa;color:#1e2a3a;line-height:1.75;font-size:14px;}
+#auth-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.88);display:none;justify-content:center;align-items:center;z-index:99999;font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;}
+.auth-box{background:#fff;border-radius:12px;padding:40px 36px;max-width:380px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.5);}
+.auth-box .ai{font-size:36px;margin-bottom:12px;}
+.auth-box h2{font-size:18px;color:#1a1a2e;margin:0 0 6px;}
+.auth-box .as{font-size:12px;color:#999;margin:0 0 24px;}
+.auth-box input{width:100%;padding:12px 16px;border:2px solid #e0e0e0;border-radius:8px;font-size:15px;text-align:center;outline:none;box-sizing:border-box;font-family:inherit;}
+.auth-box input:focus{border-color:#001b6a;}
+.auth-box .ae{display:none;color:#e74c3c;font-size:12px;margin:8px 0 0;}
+.auth-box button{width:100%;margin-top:16px;padding:12px;background:#001b6a;color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;}
+.auth-box button:hover{background:#0034b5;}
+
+#protected-content{display:none;}
+.container{max-width:960px;margin:0 auto;padding:0 20px 40px;}
+
+.warn-banner{background:linear-gradient(90deg,#b8860b,#daa520);color:#1a1a2e;padding:10px 20px;text-align:center;font-size:12px;font-weight:700;letter-spacing:2px;position:sticky;top:0;z-index:100;}
+.section{background:#fff;border-radius:14px;margin-bottom:20px;box-shadow:0 2px 12px rgba(10,38,71,.06);overflow:hidden;}
+.section-header{background:linear-gradient(90deg,#001b6a,#0034b5);color:#fff;padding:14px 22px;display:flex;align-items:center;gap:10px;}
+.section-header .ic{width:28px;height:28px;background:rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;}
+.section-header h3{font-size:15px;font-weight:800;letter-spacing:1px;}
+.section-body{padding:18px 22px;}
+.section-body p{font-size:13px;color:#444;line-height:2;margin-bottom:10px;}
+.section-body p:last-child{margin-bottom:0;}
+
+.alert-red{background:#fff5f5;border:1px solid #fecaca;border-left:4px solid #dc2626;border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert-red strong{color:#dc2626;}
+.alert-red p{font-size:12px;color:#991b1b;line-height:1.8;}
+.alert-blue{background:#eef3ff;border:1px solid #bfdbfe;border-left:4px solid #3b82f6;border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;}
+.contact-card{background:#f8faff;border:1px solid #d6e3f5;border-radius:10px;padding:14px 16px;}
+.contact-card .cc-label{font-size:11px;color:#666;margin-bottom:4px;}
+.contact-card .cc-value{font-size:13px;font-weight:700;color:#001b6a;word-break:break-all;}
+
+.strategy-rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;}
+.strategy-rule{background:linear-gradient(135deg,#fef2f2,#fff5f5);border:1px solid #fecaca;border-radius:10px;padding:16px;border-left:4px solid #dc2626;}
+.strategy-rule .sr-num{font-size:12px;font-weight:800;color:#dc2626;margin-bottom:6px;}
+.strategy-rule h4{font-size:14px;font-weight:800;color:#991b1b;margin-bottom:6px;}
+.strategy-rule p{font-size:12px;color:#555;line-height:1.8;}
+
+.script-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;}
+.script-card{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:14px;transition:all .2s;}
+.script-card:hover{border-color:#daa520;}
+.script-card .sc-scene{font-size:11px;font-weight:800;color:#b8860b;margin-bottom:6px;text-transform:uppercase;letter-spacing:1px;}
+.script-card .sc-customer{font-size:12px;color:#999;margin-bottom:6px;}
+.script-card .sc-say{font-size:12.5px;color:#444;line-height:1.8;}
+
+.fee-table{width:100%;border-collapse:collapse;font-size:12px;}
+.fee-table th{background:#001b6a;color:#fff;padding:9px 12px;text-align:center;font-weight:700;}
+.fee-table td{padding:8px 12px;border-bottom:1px solid #eee;text-align:center;}
+.fee-table tr:nth-child(even){background:#f8faff;}
+.fee-table .fc-total{font-weight:700;color:#001b6a;}
+
+.back-link{display:inline-flex;align-items:center;gap:6px;color:#0034b5;text-decoration:none;font-size:12px;font-weight:600;padding:6px 12px;border-radius:6px;transition:all .2s;margin:14px 0 0 18px;}
+.back-link:hover{background:#eef3ff;}
+
+footer{background:#0a1628;color:rgba(255,255,255,.65);padding:30px 24px 20px;text-align:center;font-size:11px;line-height:2;}
+footer .ft-company{font-size:14px;font-weight:800;color:#fff;margin-bottom:8px;}
+footer .ft-powered{text-align:right;margin-top:6px;font-size:10px;color:rgba(255,255,255,.2);}
+footer .ft-divider{width:60px;height:2px;background:rgba(255,255,255,.15);margin:14px auto;}
+footer .ft-copy{color:rgba(255,255,255,.3);}
+
+@media(max-width:768px){
+  .contact-grid,.strategy-rules,.script-grid{grid-template-columns:1fr;}
+  .fee-table{font-size:10px;}
+}
+</style>
+</head>
+<body>
+
+<div id="auth-overlay">
+  <div class="auth-box">
+    <div class="ai">🔒</div>
+    <h2>内部资料 · 密码验证</h2>
+    <p class="as">Internal Document · Password Required</p>
+    <form id="auth-form">
+      <input id="auth-input" type="password" placeholder="请输入访问密码" autocomplete="off" autofocus>
+      <p class="ae" id="auth-error">密码错误，请重试</p>
+      <button type="submit">验证 · Verify</button>
+    </form>
+  </div>
+</div>
+
+<div id="protected-content">
+
+<div class="warn-banner">⚠️ 内部资料 · 仅限中介顾问使用 · 严禁外传 ⚠️</div>
+
+<div class="container">
+
+<a href="../schools/th.html" class="back-link">← 返回泰国留学主页</a>
+
+<!-- 核心业务策略 -->
+<section class="section">
+  <div class="section-header"><div class="ic">🛡</div><h3>核心业务策略（不对外透露）</h3></div>
+  <div class="section-body">
+    <div class="alert-red">
+      <strong>⚠️ 以下内容仅供内部顾问使用，不得出现在任何对外材料中。</strong>
+      <p>所有精确收费标准、奖学金谈判空间、利润结构仅中介方内部掌握。客户咨询时应通过中介渠道对接，不得直接提供校方联系方式或精确费用明细。</p>
+    </div>
+    <div class="strategy-rules">
+      <div class="strategy-rule">
+        <div class="sr-num">策略 01</div>
+        <h4>主推"免语言入学"核心卖点</h4>
+        <p>SIU 本科/硕士/博士入学均无强制雅思/托福要求，这是最大差异竞争优势。针对英语基础薄弱（高考英语不及格）、不想考雅思的客户群体，这是致命卖点。对外强调"免语言"但不承诺"永远不需要英语"——毕业前仍需达标。</p>
+      </div>
+      <div class="strategy-rule">
+        <div class="sr-num">策略 02</div>
+        <h4>以"全包价"控制客户信息</h4>
+        <p>对外只报总价区间，不提供年度分解。咨询时方案分三档：经济型（普通专业约10万）、标准型（理工/艺术约14万）、VIP型（含辅导套餐约16-18万）。不暴露每档对应具体专业类别的精确学费。</p>
+      </div>
+      <div class="strategy-rule">
+        <div class="sr-num">策略 03</div>
+        <h4>免费住宿作为谈判筹码</h4>
+        <p>SIU 本科学子免费六人间、硕博免费四人间/六人间——年省1-3万住宿费。对比新加坡/香港/欧美每年数万住宿成本，这是说服家长的强力武器。对外宣传：留学成本仅泰国生活费即可。</p>
+      </div>
+      <div class="strategy-rule">
+        <div class="sr-num">策略 04</div>
+        <h4>专升本（Top-up）独特路径</h4>
+        <p>大专学历可申请 SIU 专升本 2 年制（总费用约 7-11.8 万元），获得全日制本科学位。这是很多"专科想翻身"客户的唯一正规通道。中医学 3 年制 14.5 万元也极具竞争力。</p>
+      </div>
+      <div class="strategy-rule">
+        <div class="sr-num">策略 05</div>
+        <h4>北大教授授课做差异化</h4>
+        <p>SIU 的信息资源管理方向由北京大学教授亲自授课，这在留学圈中极为罕见。引述这一事实可以有效建立客户信任和项目含金量感知，尤其针对本科背景一般的考生。</p>
+      </div>
+      <div class="strategy-rule">
+        <div class="sr-num">策略 06</div>
+        <h4>不制造虚假信息</h4>
+        <p>所有院校 QS 排名、学费标准、认证信息均来自官方渠道。不虚构"保录取""折扣"等承诺。SIU 真实数据：QS 五星评级 / QS 亚洲 #250 / 泰国前十 / 中留服认证——用事实说服。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 详细收费标准 -->
+<section class="section">
+  <div class="section-header"><div class="ic">💰</div><h3>西那瓦国际大学 · 详细收费标准（2026年9月1日起执行）</h3></div>
+  <div class="section-body">
+    <div class="alert-red">
+      <strong>⛔ 此板块内容严禁直接对外展示</strong>
+      <p>客户咨询时仅提供总价区间和分学年的"大概预算"，不得出具此表格的截图或精确行明细。报价时：本科统称"10-14 万（三年总学费）"，硕士统称"6.5-16 万（按学制专业）"，博士统称"25-30 万（三年总学费）"。</p>
+    </div>
+    <p style="font-size:11px;color:#888;margin-bottom:14px;">* 以下费用均为人民币（元）。费用包含学费及对应住宿标准，不含护照、签证、公证、机票、生活费、境外保险。</p>
+
+    <div style="overflow-x:auto;margin-bottom:20px;">
+      <table class="fee-table">
+        <thead>
+          <tr><th style="background:#001b6a;color:#fff;" colspan="5">本科（三年制）</th></tr>
+          <tr><th>专业类别</th><th>第一年（元）</th><th>第二年（元）</th><th>第三年（元）</th><th>合计（元）</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>商科/管理/教育/体育/旅游等</td><td>¥75,000</td><td>¥15,000</td><td>¥15,000</td><td class="fc-total">¥105,000</td></tr>
+          <tr><td>AI/计算机/电气/机械</td><td>¥75,000</td><td>¥30,000</td><td>¥30,000</td><td class="fc-total">¥135,000</td></tr>
+          <tr><td>数字艺术/设计/音乐/新闻传播</td><td>¥70,000</td><td>¥40,000</td><td>¥30,000</td><td class="fc-total">¥140,000</td></tr>
+          <tr><td>应用心理学</td><td>¥65,000</td><td>¥35,000</td><td>¥35,000</td><td class="fc-total">¥135,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="overflow-x:auto;margin-bottom:20px;">
+      <table class="fee-table">
+        <thead>
+          <tr><th style="background:#0026a0;color:#fff;" colspan="5">硕士（1/2年制）</th></tr>
+          <tr><th>学制</th><th>专业类别</th><th>费用结构（元）</th><th>合计（元）</th></tr>
+        </thead>
+        <tbody>
+          <tr><td rowspan="2">1年制</td><td>教育/管理/经济/心理/AI/英语教育</td><td style="font-size:10px;">一次性缴纳</td><td class="fc-total">¥65,000</td></tr>
+          <tr><td>音乐/美术/舞蹈/新闻/艺术表演等</td><td style="font-size:10px;">一次性缴纳</td><td class="fc-total">¥80,000</td></tr>
+          <tr style="background:#f7f9fc;"><td>2年制</td><td>教育/管理/经济/心理/工程/新闻等</td><td style="font-size:10px;">第一年 ¥85,000 + 第二年 ¥43,300</td><td class="fc-total">¥128,300</td></tr>
+          <tr><td>2年制</td><td>AI/能源/机械/电气/艺术表演等</td><td style="font-size:10px;">第一年 ¥98,000-104,000 + 第二年 ¥40,000-60,000</td><td class="fc-total">¥138,000-158,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="overflow-x:auto;margin-bottom:20px;">
+      <table class="fee-table">
+        <thead>
+          <tr><th style="background:#0034b5;color:#fff;" colspan="5">博士（三年制）</th></tr>
+          <tr><th>专业类别</th><th>第一年（元）</th><th>第二年（元）</th><th>第三年（元）</th><th>合计（元）</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>教育/管理/经济/心理/AI/英语教育</td><td>¥113,200</td><td>¥66,000</td><td>¥66,000</td><td class="fc-total">¥245,200</td></tr>
+          <tr><td>新闻传播/信息资源管理</td><td>¥90,000-146,000</td><td>¥51,000-85,000</td><td>¥51,000-85,000</td><td class="fc-total">¥248,000-260,000</td></tr>
+          <tr><td>音乐/舞蹈/美术/心理/公共卫生等</td><td>¥128,000-166,000</td><td>¥56,000-70,000</td><td>¥56,000-70,000</td><td class="fc-total">¥268,000-298,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="alert-blue">
+      <strong>🎓 奖学金谈判空间：</strong>2年制硕士部分专业可申请最高 <strong>¥20,000</strong> 希望奖学金；3年制博士部分专业可申请最高 <strong>¥40,000</strong> 希望奖学金。具体名额依年度预算，先到先得，可作"限时限量"的逼单工具。
+    </div>
+    <div class="alert-blue">
+      <strong>📌 专升本（Top-up）：</strong>大专学历申请 2 年制，总费用 ¥70,000-118,000（视专业）；中医学 3 年制 ¥145,000。学制依据学分匹配确定——客户签约前须核实学信网学历认证。
+    </div>
+  </div>
+</section>
+
+<!-- 中介服务费设计 -->
+<section class="section">
+  <div class="section-header"><div class="ic">📊</div><h3>中介服务费与利润设计</h3></div>
+  <div class="section-body">
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div style="display:flex;gap:14px;align-items:flex-start;background:#f8faff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;">
+        <div style="min-width:30px;height:30px;background:linear-gradient(135deg,#001b6a,#0034b5);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;flex-shrink:0;">1</div>
+        <div style="flex:1;"><h5 style="font-size:13px;font-weight:800;color:#001b6a;margin-bottom:3px;">选校选专业规划</h5><div style="font-size:12px;color:#b8860b;font-weight:700;margin-bottom:4px;">建议报价：¥2,000-5,000</div><div style="font-size:11.5px;color:#666;line-height:1.7;">"SIU有6大方向近30个专业，从教育学到人工智能到中医。根据您的学历和兴趣，我们一对一匹配最合适的专业方向。"</div></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;background:#f8faff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;">
+        <div style="min-width:30px;height:30px;background:linear-gradient(135deg,#001b6a,#0034b5);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;flex-shrink:0;">2</div>
+        <div style="flex:1;"><h5 style="font-size:13px;font-weight:800;color:#001b6a;margin-bottom:3px;">材料翻译 + 公证 + 学历认证</h5><div style="font-size:12px;color:#b8860b;font-weight:700;margin-bottom:4px;">建议报价：¥800-2,000</div><div style="font-size:11.5px;color:#666;line-height:1.7;">"高中/大专/本科成绩单翻译公证、护照翻译、中留服认证等全套材料处理，省去您自己跑公证处的时间。"</div></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;background:#f8faff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;">
+        <div style="min-width:30px;height:30px;background:linear-gradient(135deg,#001b6a,#0034b5);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;flex-shrink:0;">3</div>
+        <div style="flex:1;"><h5 style="font-size:13px;font-weight:800;color:#001b6a;margin-bottom:3px;">英语强化辅导（可选）</h5><div style="font-size:12px;color:#b8860b;font-weight:700;margin-bottom:4px;">建议报价：¥2,000-5,000</div><div style="font-size:11.5px;color:#666;line-height:1.7;">"虽然入学免雅思，但毕业前需要拿到雅思5.0或同等水平。我们有英语基础强化课程，帮孩子顺利达标。"</div></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;background:#f8faff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;">
+        <div style="min-width:30px;height:30px;background:linear-gradient(135deg,#001b6a,#0034b5);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;flex-shrink:0;">4</div>
+        <div style="flex:1;"><h5 style="font-size:13px;font-weight:800;color:#001b6a;margin-bottom:3px;">申请表填写 + 网申代办</h5><div style="font-size:12px;color:#b8860b;font-weight:700;margin-bottom:4px;">建议报价：¥2,000-4,000</div><div style="font-size:11.5px;color:#666;line-height:1.7;">"SIU的申请系统、材料上传、进度跟进全部由我们一手操办。您只需要提供基础材料原件，省时省力。"</div></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;background:#f8faff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;">
+        <div style="min-width:30px;height:30px;background:linear-gradient(135deg,#001b6a,#0034b5);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;flex-shrink:0;">5</div>
+        <div style="flex:1;"><h5 style="font-size:13px;font-weight:800;color:#001b6a;margin-bottom:3px;">签证办理</h5><div style="font-size:12px;color:#b8860b;font-weight:700;margin-bottom:4px;">建议报价：¥1,500-3,000</div><div style="font-size:11.5px;color:#666;line-height:1.7;">"泰国学生签证（Non-ED）全程代办，包括学校录取信、使馆预约、材料准备。泰国签证通过率极高，基本无拒签风险。"</div></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;background:#f8faff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;">
+        <div style="min-width:30px;height:30px;background:linear-gradient(135deg,#001b6a,#0034b5);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;flex-shrink:0;">6</div>
+        <div style="flex:1;"><h5 style="font-size:13px;font-weight:800;color:#001b6a;margin-bottom:3px;">行前培训 + 住宿对接</h5><div style="font-size:12px;color:#b8860b;font-weight:700;margin-bottom:4px;">建议报价：¥1,000-2,500</div><div style="font-size:11.5px;color:#666;line-height:1.7;">"出发前安排行前培训，包括泰国入境指南、银行开户、手机卡办理、校园生活攻略。宿舍提前安排好——SIU本科免费六人间、硕博免费四人间/六人间。"</div></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;background:#f8faff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;">
+        <div style="min-width:30px;height:30px;background:linear-gradient(135deg,#001b6a,#0034b5);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;flex-shrink:0;">7</div>
+        <div style="flex:1;"><h5 style="font-size:13px;font-weight:800;color:#001b6a;margin-bottom:3px;">海外年度跟踪服务</h5><div style="font-size:12px;color:#b8860b;font-weight:700;margin-bottom:4px;">建议报价：¥1,500-3,000/年</div><div style="font-size:11.5px;color:#666;line-height:1.7;">"孩子到泰国后我们不是就不管了。签证续签、成绩跟踪、实习资源对接，每年持续服务，家长在国内放心。"</div></div>
+      </div>
+    </div>
+    <p style="font-size:11px;color:#666;margin-top:16px;line-height:1.8;"><strong>利润测算（按年签约30人）：</strong>主力全包套餐报价 ¥10,000-15,000，成本（翻译公证外包、英语辅导课时费）约 ¥2,500/人，单客毛利约 ¥7,500-12,500，年毛利约 ¥225,000-375,000。</p>
+  </div>
+</section>
+
+<!-- 销售话术 -->
+<section class="section">
+  <div class="section-header"><div class="ic">💬</div><h3>常见客户问题 · 应对话术（泰国/西那瓦）</h3></div>
+  <div class="section-body">
+    <div class="script-grid">
+      <div class="script-card">
+        <div class="sc-scene">💸 关于价格</div>
+        <div class="sc-customer">"三年10万块，泰国留学有那么便宜吗？是不是野鸡大学？"</div>
+        <div class="sc-say">"这个价格是真实的。SIU是泰国正规大学——QS五星评级、亚洲250强、中国留服中心认证，这些都可以在QS官网和中留服官网查到。泰国生活成本本来就低，而且SIU有免费住宿，学费分期缴纳，所以总费用能做到很亲民。这不是野鸡大学，是正儿八经的国际化大学。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">📜 关于认证</div>
+        <div class="sc-customer">"泰国文凭回国认吗？能不能考公务员？"</div>
+        <div class="sc-say">"中泰两国2007年就签署了学历学位互认协议，2010年又续签了。SIU在中国教育部留学服务中心有备案，毕业后可以做留服认证——认证后跟国内全日制本科学历同等效力，可以考公考编、一线城市落户、享受留学生购车免税政策。"
+        </div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🚫 关于语言</div>
+        <div class="sc-customer">"我英语很差，雅思肯定考不过，能留学吗？"</div>
+        <div class="sc-say">"这正是西那瓦国际大学最大的优势——入学不需要雅思/托福成绩。不像欧美国家动辄雅思6.5、托福90+，SIU入学0语言门槛。课程有中文辅助，孩子先过去慢慢适应英语环境，毕业前再考雅思5.0就行。这个门槛低太多了。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🏫 关于学校</div>
+        <div class="sc-customer">"西那瓦这个名字听着像野鸡大学，跟蓝翔似的。"</div>
+        <div class="sc-say">"西那瓦是泰国前总理他信·西那瓦的姓氏，是泰国最知名的政治家族之一。学校由他信先生1999年创办，英国王子安德鲁曾到访为学校揭幕，是正规贵族大学。QS五星评级、亚洲排名250、泰国前十——这些国际排名说明问题。名字翻译成中文确实有点特别，但含金量不低。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">✨ 关于含金量</div>
+        <div class="sc-customer">"QS亚洲250名，听着不高啊，跟国内的大学比怎么样？"</div>
+        <div class="sc-say">"QS亚洲250名放在中国相当于什么水平——大概在211末尾到双一流这个区间，跟长安大学、太原理工这些学校的国际排名接近。但关键是：SIU入学门槛低太多了，不用高考，不用雅思。对于成绩一般的孩子来说，这是一条正规的海归本科通道。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🇹🇭 关于泰国</div>
+        <div class="sc-customer">"泰国安全吗？听说最近有些负面新闻。"</div>
+        <div class="sc-say">"泰国是东南亚最安全的国家之一，旅游业是支柱产业，社会治安整体很好。SIU主校区在曼谷近郊巴吞他尼，是比较安静安全的大学城环境。学校有24小时安保、宿舍门禁。任何国家都有个别事件，但从统计数据看，泰国的犯罪率远低于很多欧美留学国家。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">💼 关于就业</div>
+        <div class="sc-customer">"泰国留学回来好找工作吗？"</div>
+        <div class="sc-say">"中泰贸易量巨大，华为、小米、比亚迪等中国企业大量在泰国布局，对既懂中文、又了解泰国的国际人才需求持续增长。SIU毕业生有留在泰国中资企业工作的，有回国发展的，也有继续去欧美读硕博的。关键是人脉和视野——泰国是中国企业出海东南亚的第一站。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🎓 关于专升本</div>
+        <div class="sc-customer">"我是大专学历，能直接读吗？读多久？"</div>
+        <div class="sc-say">"可以的。SIU支持专升本（Top-up），大专学历匹配学分后，2年即可获得全日制本科学位，费用约7-11.8万元。中医学方向3年、约14.5万。这是一条正规的学历提升通道——很多专科生靠这个拿到了海归本科文凭，后续考公考研都行。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🏠 关于住宿</div>
+        <div class="sc-customer">"免费住宿是什么条件？会不会很差？"</div>
+        <div class="sc-say">"SIU的免费住宿条件不错：本科六人间、硕博四人间/六人间，带空调、独立卫生间、公共洗衣房、WiFi覆盖。虽然不是豪华酒店，但作为大学宿舍来说标准不低。泰国气候炎热，空调是标配。对比一下——你去英国留学一年的住宿费可能就要8-10万，这里三年住宿全免。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">⏱ 关于快速毕业</div>
+        <div class="sc-customer">"1年制硕士靠谱吗？会不会学不到东西？"</div>
+        <div class="sc-say">"1年制硕士是SIU的正规学制，跟英国的1年制硕士一样紧凑。课程是6.5-8万元人民币总费用，省时间省钱——对已经在工作想提升学历的人来说非常合适。1年制硕士回国同样可以做留服认证。学制短不代表质量差，就是课程密度大，需要全身心投入。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🤝 关于北大授课</div>
+        <div class="sc-customer">"你们说北大教授来教，真的假的？"</div>
+        <div class="sc-say">"是真的，SIU的信息资源管理专业方向由北京大学的教授团队授课。这是SIU的优势合作项目之一，不是所有专业都有——但要选这个方向的，确实是北大的教授来上课，师资含金量很高。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🔍 关于查证</div>
+        <div class="sc-customer">"我怎么查这个学校的正规性？"</div>
+        <div class="sc-say">"三个官方渠道可以查：1）中国教育部留学服务中心官网（cscse.edu.cn）——查认证院校名单，搜索 Shinawatra University；2）QS官网（topuniversities.com）——查 QS 星级和排名；3）泰国教育部官网。我们也可以提供中留服认证的样板给您看。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">📋 关于申请流程</div>
+        <div class="sc-customer">"从现在开始到入学，整个流程要多久？"</div>
+        <div class="sc-say">"SIU 本科每年8月入学，硕士有1月、2月、7月、9月四个时间窗口。从提交材料到拿到录取通知书大约2-4周，然后办签证需要1-2周。总流程从报名到出发大约1-2个月。建议至少提前3个月开始准备，预留充足时间。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🛂 关于签证</div>
+        <div class="sc-customer">"泰国签证好办吗？会不会被拒？"</div>
+        <div class="sc-say">"泰国学生签证（Non-ED签证）通过率非常高，只要是正规院校录取、材料真实齐全，基本不存在拒签问题。而且泰国离中国近，万一有什么需要补充的，往返也很方便。跟美国F1签证动不动行政审查相比，泰国留学签证省心太多。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">⬅️ 关于退费</div>
+        <div class="sc-customer">"交了费之后不想去了能退吗？"</div>
+        <div class="sc-say">"校方学费按照学校退费政策办理。中介服务费按照合同约定：如果还没有启动实质服务（未递交申请），全额退；已经递交申请的，按已完成服务比例结算。所有条款签约时写清楚。建议决定前充分了解，避免产生退费的麻烦。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">💰 关于生活开销</div>
+        <div class="sc-customer">"在泰国一个月生活费大概多少？"</div>
+        <div class="sc-say">"SIU在曼谷近郊，生活费比市中心实惠。用餐：学校食堂一顿约30-50泰铢（约6-10元人民币），一个月伙食约1,000-1,500元。其他开销（手机、日用品、零花钱）约500-1,000元。不含机票，正常花销一个月2,000-3,000元人民币过得不错了。加上免费住宿，泰国留学的生活成本在亚洲留学国家中是最低的一档。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">👨‍👩‍👧 关于陪读/探望</div>
+        <div class="sc-customer">"孩子一个人去泰国，家长能去看吗？"</div>
+        <div class="sc-say">"当然可以。中国公民去泰国免签或落地签，飞曼谷只要3-4个小时。节假日家长随时可以飞过去看看，顺便还可以旅游。大皇宫、水上市场、芭提雅、普吉岛——家长去看孩子顺便度个假，一举两得。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">📚 关于毕业</div>
+        <div class="sc-customer">"好毕业吗？听说有些国外大学很难读下来。"</div>
+        <div class="sc-say">"SIU的课程兼顾理论与实践，难度适中。英语授课但有中文辅助，中国学生适应起来比较快。关键是要按时上课、完成作业、考试合格。只要认真学，毕业不是问题。毕业前英语达标（雅思5.0）——这个水平相当于高中英语及格水平，不难。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🆚 关于对比</div>
+        <div class="sc-customer">"我同时在看日韩留学，泰国比日韩好在哪？"</div>
+        <div class="sc-say">"三大优势：第一，语言门槛——泰国免雅思入学，日韩需要日语N2/韩语TOPIK3级以上才能进专业课；第二，费用——泰国三年本科10-14万全包，日韩一年就要10-15万；第三，周期——泰国三年本科毕业，日韩因为有语言预科阶段通常要4-5年。最适合英语基础弱、预算有限、想尽快拿学历的学生。"</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 内部参考信息 -->
+<section class="section">
+  <div class="section-header"><div class="ic">📋</div><h3>SIU 关键信息速查表（内部参考）</h3></div>
+  <div class="section-body">
+    <table class="fee-table">
+      <thead>
+        <tr><th>维度</th><th>详情</th></tr>
+      </thead>
+      <tbody>
+        <tr><td style="font-weight:700;">创办年份</td><td>1999年</td></tr>
+        <tr><td style="font-weight:700;">创办人</td><td>泰国前总理 他信·西那瓦</td></tr>
+        <tr><td style="font-weight:700;">QS评级</td><td>卓越五星级</td></tr>
+        <tr><td style="font-weight:700;">QS亚洲排名</td><td>#250（2026年）</td></tr>
+        <tr><td style="font-weight:700;">泰国国内排名</td><td>前十</td></tr>
+        <tr><td style="font-weight:700;">中国认证</td><td>中留服认证（cscse.edu.cn可查）</td></tr>
+        <tr><td style="font-weight:700;">校区</td><td>主校区：巴吞他尼府（750亩）+ 市内：曼谷OAI Tower</td></tr>
+        <tr><td style="font-weight:700;">国际合作</td><td>全球150+高校和研究机构</td></tr>
+        <tr><td style="font-weight:700;">本科学制</td><td>3年（部分专业4-5年如中医）</td></tr>
+        <tr><td style="font-weight:700;">硕士学制</td><td>1年制 / 2年制</td></tr>
+        <tr><td style="font-weight:700;">博士学制</td><td>3年</td></tr>
+        <tr><td style="font-weight:700;">入学语言</td><td>本科/硕士/博士均无强制要求；毕业前需雅思5.0或同等水平</td></tr>
+        <tr><td style="font-weight:700;">专升本</td><td>支持，2年制（约¥70,000-118,000）</td></tr>
+        <tr><td style="font-weight:700;">住宿</td><td>本科：免费六人间；硕博：免费四人间/六人间</td></tr>
+        <tr><td style="font-weight:700;">本科入学月</td><td>8月（同专业需满25人）</td></tr>
+        <tr><td style="font-weight:700;">硕士入学月</td><td>1年制：2月、9月；2年制：1月、7月</td></tr>
+        <tr><td style="font-weight:700;">博士入学月</td><td>1月、7月</td></tr>
+        <tr><td style="font-weight:700;">奖学金</td><td>硕士最高 ¥20,000 / 博士最高 ¥40,000（希望奖学金）</td></tr>
+        <tr><td style="font-weight:700;">特殊合作</td><td>信息资源管理方向由北京大学教授授课</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <div class="ft-company">LazyFirst · studyAbroad 内部资料</div>
+  <div class="ft-powered">Powered by LazyFirst</div>
+  <div class="ft-divider"></div>
+  <div class="ft-copy">内部资料 · 仅限授权人员查阅 · 严禁外传</div>
+</footer>
+
+</div><!-- /protected-content -->
+
+<script src="../js/auth.js"></script>
+</body>
+</html>

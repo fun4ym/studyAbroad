@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="auth-hash" content="275c74259807003b2b53eefc7b11854d387dd62c14179edc9a031ec9b671a2f6">
+<meta name="robots" content="noindex,nofollow">
+<title>内部资料 · 新加坡国际本科 | LazyFirst · studyAbroad</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei","Helvetica Neue",sans-serif;background:#f5f7fa;color:#1e2a3a;line-height:1.75;font-size:14px;}
+#auth-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.88);display:none;justify-content:center;align-items:center;z-index:99999;font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;}
+.auth-box{background:#fff;border-radius:12px;padding:40px 36px;max-width:380px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.5);}
+.auth-box .ai{font-size:36px;margin-bottom:12px;}
+.auth-box h2{font-size:18px;color:#1a1a2e;margin:0 0 6px;}
+.auth-box .as{font-size:12px;color:#999;margin:0 0 24px;}
+.auth-box input{width:100%;padding:12px 16px;border:2px solid #e0e0e0;border-radius:8px;font-size:15px;text-align:center;outline:none;box-sizing:border-box;font-family:inherit;}
+.auth-box input:focus{border-color:#0a2647;}
+.auth-box .ae{display:none;color:#e74c3c;font-size:12px;margin:8px 0 0;}
+.auth-box button{width:100%;margin-top:16px;padding:12px;background:#0a2647;color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;}
+.auth-box button:hover{background:#144272;}
+
+#protected-content{display:none;}
+.container{max-width:960px;margin:0 auto;padding:0 20px 40px;}
+
+/* Warn banner */
+.warn-banner{background:linear-gradient(90deg,#c0392b,#e74c3c);color:#fff;padding:10px 20px;text-align:center;font-size:12px;font-weight:700;letter-spacing:2px;position:sticky;top:0;z-index:100;}
+/* Sections */
+.section{background:#fff;border-radius:14px;margin-bottom:20px;box-shadow:0 2px 12px rgba(10,38,71,.06);overflow:hidden;}
+.section-header{background:linear-gradient(90deg,#0a2647,#144272);color:#fff;padding:14px 22px;display:flex;align-items:center;gap:10px;}
+.section-header .ic{width:28px;height:28px;background:rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;}
+.section-header h3{font-size:15px;font-weight:800;letter-spacing:1px;}
+.section-body{padding:18px 22px;}
+.section-body p{font-size:13px;color:#444;line-height:2;margin-bottom:10px;}
+.section-body p:last-child{margin-bottom:0;}
+
+/* Alert box */
+.alert-red{background:#fff5f5;border:1px solid #fecaca;border-left:4px solid #dc2626;border-radius:8px;padding:12px 16px;margin-bottom:16px;}
+.alert-red strong{color:#dc2626;}
+.alert-red p{font-size:12px;color:#991b1b;line-height:1.8;}
+
+/* Contact info grid */
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;}
+.contact-card{background:#f8faff;border:1px solid #d6e3f5;border-radius:10px;padding:14px 16px;}
+.contact-card .cc-label{font-size:11px;color:#666;margin-bottom:4px;}
+.contact-card .cc-value{font-size:13px;font-weight:700;color:#0a2647;word-break:break-all;}
+.contact-card .cc-value a{color:#144272;text-decoration:none;}
+
+/* Account info */
+.account-box{background:#f8faff;border:1px solid #d6e3f5;border-radius:10px;padding:16px 18px;}
+.account-box .ab-row{display:flex;gap:12px;padding:8px 0;border-bottom:1px dashed #d6e3f5;font-size:13px;}
+.account-box .ab-row:last-child{border-bottom:none;}
+.account-box .ab-label{flex-shrink:0;min-width:110px;color:#666;}
+.account-box .ab-value{flex:1;color:#0a2647;font-weight:700;word-break:break-all;}
+
+/* Strategy rules */
+.strategy-rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;}
+.strategy-rule{background:linear-gradient(135deg,#fef2f2,#fff5f5);border:1px solid #fecaca;border-radius:10px;padding:16px;border-left:4px solid #dc2626;}
+.strategy-rule .sr-num{font-size:12px;font-weight:800;color:#dc2626;margin-bottom:6px;}
+.strategy-rule h4{font-size:14px;font-weight:800;color:#991b1b;margin-bottom:6px;}
+.strategy-rule p{font-size:12px;color:#555;line-height:1.8;}
+
+/* Service chain */
+.service-chain{display:flex;flex-direction:column;gap:10px;}
+.service-item{display:flex;gap:14px;align-items:flex-start;background:#f8faff;border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;transition:all .2s;}
+.service-item:hover{border-color:#144272;}
+.service-item .si-num{min-width:30px;height:30px;background:linear-gradient(135deg,#0a2647,#144272);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;flex-shrink:0;}
+.service-item .si-body{flex:1;}
+.service-item .si-body h5{font-size:13px;font-weight:800;color:#0a2647;margin-bottom:3px;}
+.service-item .si-body .si-price{font-size:12px;color:#c9a84c;font-weight:700;margin-bottom:4px;}
+.service-item .si-body .si-script{font-size:11.5px;color:#666;line-height:1.7;font-style:italic;}
+
+/* Package cards */
+.package-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;}
+.package-card{border-radius:14px;overflow:hidden;border:2px solid #e2e8f0;transition:all .2s;}
+.package-card:hover{transform:translateY(-2px);}
+.package-card .pk-head{padding:16px 18px;color:#fff;text-align:center;}
+.package-card .pk-body{padding:16px 18px;background:#fff;}
+.package-card .pk-body li{font-size:12px;color:#555;padding:5px 0;border-bottom:1px dashed #eee;list-style:none;}
+.package-card .pk-body li:last-child{border-bottom:none;}
+.package-card .pk-footer{text-align:center;padding:12px;font-size:12px;font-weight:700;}
+
+.pk-a .pk-head{background:linear-gradient(135deg,#27ae60,#2ecc71);}
+.pk-a .pk-footer{color:#27ae60;}
+.pk-b .pk-head{background:linear-gradient(135deg,#0a2647,#144272);}
+.pk-b .pk-footer{color:#144272;}
+.pk-c .pk-head{background:linear-gradient(135deg,#8e44ad,#9b59b6);}
+.pk-c .pk-footer{color:#8e44ad;}
+
+/* Script box */
+.script-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;}
+.script-card{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:14px;transition:all .2s;}
+.script-card:hover{border-color:#c9a84c;}
+.script-card .sc-scene{font-size:11px;font-weight:800;color:#c9a84c;margin-bottom:6px;text-transform:uppercase;letter-spacing:1px;}
+.script-card .sc-customer{font-size:12px;color:#999;margin-bottom:6px;}
+.script-card .sc-say{font-size:12.5px;color:#444;line-height:1.8;}
+
+/* Fee analysis */
+.fee-compare{width:100%;border-collapse:collapse;font-size:13px;}
+.fee-compare th{background:#0a2647;color:#fff;padding:10px 14px;text-align:left;font-weight:700;}
+.fee-compare td{padding:9px 14px;border-bottom:1px solid #eee;}
+.fee-compare tr:nth-child(even){background:#f8faff;}
+.fee-compare .fc-highlight td{background:#fff8e6;font-weight:700;}
+
+/* Back link */
+.back-link{display:inline-flex;align-items:center;gap:6px;color:#144272;text-decoration:none;font-size:12px;font-weight:600;padding:6px 12px;border-radius:6px;transition:all .2s;margin:14px 0 0 18px;}
+.back-link:hover{background:#eef3ff;}
+
+/* Footer */
+footer{background:#0a1628;color:rgba(255,255,255,.65);padding:30px 24px 20px;text-align:center;font-size:11px;line-height:2;}
+footer .ft-company{font-size:14px;font-weight:800;color:#fff;margin-bottom:8px;}
+footer .ft-powered{text-align:right;margin-top:6px;font-size:10px;color:rgba(255,255,255,.2);}
+footer .ft-divider{width:60px;height:2px;background:rgba(255,255,255,.15);margin:14px auto;}
+footer .ft-copy{color:rgba(255,255,255,.3);}
+
+@media(max-width:768px){
+  .contact-grid,.strategy-rules,.package-grid,.script-grid{grid-template-columns:1fr;}
+  .account-box .ab-row{flex-direction:column;gap:2px;}
+}
+</style>
+</head>
+<body>
+
+<!-- Auth Overlay -->
+<div id="auth-overlay">
+  <div class="auth-box">
+    <div class="ai">🔒</div>
+    <h2>内部资料 · 密码验证</h2>
+    <p class="as">Internal Document · Password Required</p>
+    <form id="auth-form">
+      <input id="auth-input" type="password" placeholder="请输入访问密码" autocomplete="off" autofocus>
+      <p class="ae" id="auth-error">密码错误，请重试</p>
+      <button type="submit">验证 · Verify</button>
+    </form>
+  </div>
+</div>
+
+<!-- Protected Content -->
+<div id="protected-content">
+
+<div class="warn-banner">⚠️ 内部资料 · 仅限中介顾问使用 · 严禁外传 ⚠️</div>
+
+<div class="container">
+
+<a href="../schools/sg-undergraduate.html" class="back-link">← 返回招生简章</a>
+
+<!-- 业务策略 -->
+<section class="section">
+  <div class="section-header"><div class="ic">🛡</div><h3>核心业务策略（不对外透露）</h3></div>
+  <div class="section-body">
+    <div class="alert-red">
+      <strong>⚠️ 以下内容仅供内部顾问使用，不得出现在任何对外材料中。</strong>
+      <p>所有敏感联系方式、定价策略、利润结构仅中介方内部掌握，客户咨询时应通过中介渠道对接，不得直接提供校方直连方式。</p>
+    </div>
+    <div class="strategy-rules">
+      <div class="strategy-rule">
+        <div class="sr-num">策略 01</div>
+        <h4>控制校方直连通道</h4>
+        <p>对外页面仅展示学院官网（sie.dlufl.edu.cn），隐藏所有电子邮箱、电话、对公账户。客户必须通过中介渠道完成咨询→报名→缴费全链路。</p>
+      </div>
+      <div class="strategy-rule">
+        <div class="sr-num">策略 02</div>
+        <h4>主推新加坡低成本路径</h4>
+        <p>新加坡 2+2 项目年学费仅 ¥55,000（国内阶段），远低于英美澳直接留学。利用"离家近+双语+认证学位"三要素说服家长，重点面向二三线城市高考边缘生。</p>
+      </div>
+      <div class="strategy-rule">
+        <div class="sr-num">策略 03</div>
+        <h4>分阶服务费，锁定长期价值</h4>
+        <p>服务费分国内阶段 + 留学阶段两段收取，4年服务周期确保客户粘性。前端签约价控制在 ¥8,000-18,000，后端年度服务 + 签证续签持续产生收入。</p>
+      </div>
+      <div class="strategy-rule">
+        <div class="sr-num">策略 04</div>
+        <h4>不制造虚假信息</h4>
+        <p>所有院校QS排名、学费标准、认证信息均来自官方渠道，不做夸大承诺。不虚构"保录取""奖学金折扣"等噱头，用透明建立信任，降低客诉风险。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 官方联系方式 -->
+<section class="section">
+  <div class="section-header"><div class="ic">📞</div><h3>校方联系方式（中介内部掌握）</h3></div>
+  <div class="section-body">
+    <div class="alert-red">
+      <strong>⛔ 此板块内容严禁出现在任何对外材料中</strong>
+      <p>以下信息仅限中介顾问内部使用。客户如需联系校方，应通过中介渠道统一对接，避免客户直联校方导致业务流失。</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="cc-label">咨询热线</div>
+        <div class="cc-value"><a href="tel:15998651079">15998651079</a></div>
+      </div>
+      <div class="contact-card">
+        <div class="cc-label">院长邮箱</div>
+        <div class="cc-value"><a href="mailto:gjpzxy@dlufl.edu.cn">gjpzxy@dlufl.edu.cn</a></div>
+      </div>
+      <div class="contact-card">
+        <div class="cc-label">项目邮箱</div>
+        <div class="cc-value"><a href="mailto:18940880301@163.com">18940880301@163.com</a></div>
+      </div>
+      <div class="contact-card">
+        <div class="cc-label">学院官网</div>
+        <div class="cc-value"><a href="https://sie.dlufl.edu.cn" target="_blank">sie.dlufl.edu.cn</a></div>
+      </div>
+      <div class="contact-card">
+        <div class="cc-label">学校地址</div>
+        <div class="cc-value">大连市旅顺口区旅顺南路西段6号</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 对公账户 -->
+<section class="section">
+  <div class="section-header"><div class="ic">🏦</div><h3>缴费账户（对公）</h3></div>
+  <div class="section-body">
+    <div class="account-box">
+      <div class="ab-row">
+        <div class="ab-label">账户名称</div>
+        <div class="ab-value">大连外国语大学国际教育培训中心</div>
+      </div>
+      <div class="ab-row">
+        <div class="ab-label">纳税人识别号</div>
+        <div class="ab-value">52210200E57619404G</div>
+      </div>
+      <div class="ab-row">
+        <div class="ab-label">地址</div>
+        <div class="ab-value">大连市旅顺口区旅顺南路西段6号</div>
+      </div>
+      <div class="ab-row">
+        <div class="ab-label">开户行</div>
+        <div class="ab-value">中国建设银行大连旅顺支行</div>
+      </div>
+      <div class="ab-row">
+        <div class="ab-label">账号</div>
+        <div class="ab-value">21201500510053017805</div>
+      </div>
+    </div>
+    <p class="fee-note" style="font-size:11px;color:#666;margin-top:10px;line-height:1.8;">注：学费统一由客户通过对公账户直接缴纳至校方，中介不代收学费。留学服务费由中介另行收取。</p>
+  </div>
+</section>
+
+<!-- 收费明细 -->
+<section class="section">
+  <div class="section-header"><div class="ic">💰</div><h3>校方收费标准</h3></div>
+  <div class="section-body">
+    <table class="fee-compare">
+      <thead>
+        <tr><th>收费项目</th><th>金额</th><th>备注</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>学费</td><td>55,000 元/年</td><td>国外阶段按外方高校标准另行缴纳</td></tr>
+        <tr><td>报名费</td><td>200 元</td><td>不退还</td></tr>
+        <tr><td>住宿费</td><td>3,000 元/学期</td><td>以实际为准</td></tr>
+        <tr><td>保险费</td><td>400 元/年</td><td></td></tr>
+        <tr><td>教材费</td><td>4,000 元</td><td>一次性，多退少补</td></tr>
+        <tr><td>军训费</td><td>650 元</td><td>一次性</td></tr>
+        <tr><td>行李备品</td><td>450 元</td><td>一次性，自愿</td></tr>
+        <tr><td>系服</td><td>550 元</td><td>一次性</td></tr>
+        <tr class="fc-highlight"><td>留学服务费</td><td>视院校专业而定</td><td>中介谈判空间</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:11px;color:#666;margin-top:10px;line-height:1.8;">第一年一次性费用约 ¥9,250（不含学费），学费一年 ¥55,000。国内两年总投入约 ¥120,000-130,000。</p>
+  </div>
+</section>
+
+<!-- 中介服务费设计 -->
+<section class="section">
+  <div class="section-header"><div class="ic">📊</div><h3>中介服务费与利润设计</h3></div>
+  <div class="section-body">
+    <div class="service-chain">
+      <div class="service-item">
+        <div class="si-num">1</div>
+        <div class="si-body">
+          <h5>选校选专业规划</h5>
+          <div class="si-price">建议报价：¥2,000-5,000</div>
+          <div class="si-script">"我们有13所新加坡合作院校，从QS前50到后700都有覆盖。根据孩子的成绩和兴趣，我们一对一帮您匹配最合适的院校和专业方向。"</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="si-num">2</div>
+        <div class="si-body">
+          <h5>材料翻译 + 公证</h5>
+          <div class="si-price">建议报价：¥500-1,500</div>
+          <div class="si-script">"我们有合作的翻译公证渠道，省去您自己跑公证处的时间和精力，全套材料打包处理。"</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="si-num">3</div>
+        <div class="si-body">
+          <h5>英语强化辅导（可选）</h5>
+          <div class="si-price">建议报价：¥2,000-5,000</div>
+          <div class="si-script">"英语单科不到90分的话，入学前需要参加综合测评考试。我们有专门的英语强化课程，帮孩子顺利通过。"</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="si-num">4</div>
+        <div class="si-body">
+          <h5>网上申请全程代办</h5>
+          <div class="si-price">建议报价：¥2,000-4,000</div>
+          <div class="si-script">"大外的报名系统、新加坡院校的申请表、材料上传，全部由我们一手操办，您只需要提供基础材料。"</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="si-num">5</div>
+        <div class="si-body">
+          <h5>个人陈述 / 文书润色</h5>
+          <div class="si-price">建议报价：¥800-2,000</div>
+          <div class="si-script">"少数院校需要提交动机信或个人陈述，我们有专业文书老师帮您润色，突出孩子的亮点。"</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="si-num">6</div>
+        <div class="si-body">
+          <h5>签证办理</h5>
+          <div class="si-price">建议报价：¥1,500-3,000</div>
+          <div class="si-script">"新加坡学生签证（Student Pass）由我们全程代办，包括ICA预约、材料准备、担保人安排等。"</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="si-num">7</div>
+        <div class="si-body">
+          <h5>行前培训 + 住宿安排</h5>
+          <div class="si-price">建议报价：¥1,000-2,500</div>
+          <div class="si-script">"出发前我们安排行前培训，包括新加坡入境指南、银行开户、手机卡办理，宿舍和租房也提前对接好。"</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="si-num">8</div>
+        <div class="si-body">
+          <h5>海外年度服务（第3年起）</h5>
+          <div class="si-price">建议报价：¥1,500-3,000/年</div>
+          <div class="si-script">"孩子到新加坡后我们不是就不管了。签证续签、成绩跟踪、转学或升学指导，每年持续服务。"</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 三档套餐 -->
+<section class="section">
+  <div class="section-header"><div class="ic">📦</div><h3>服务套餐设计（内部报价）</h3></div>
+  <div class="section-body">
+    <div class="package-grid">
+      <div class="package-card pk-a">
+        <div class="pk-head">
+          <div style="font-size:12px;opacity:.8;letter-spacing:1px;">套餐 A</div>
+          <h4 style="font-size:18px;margin-top:4px;">基础服务</h4>
+        </div>
+        <ul class="pk-body">
+          <li>选校规划 + 院校推荐</li>
+          <li>网上申请全程代办</li>
+          <li>材料上传 + 跟进</li>
+          <li>行前基础指导</li>
+        </ul>
+        <div class="pk-footer">报价：¥6,000-10,000</div>
+      </div>
+      <div class="package-card pk-b">
+        <div class="pk-head">
+          <div style="font-size:12px;opacity:.8;letter-spacing:1px;">⭐ 主力推荐</div>
+          <h4 style="font-size:18px;margin-top:4px;">套餐 B · 标准</h4>
+        </div>
+        <ul class="pk-body">
+          <li>套餐A全部服务</li>
+          <li>英语强化辅导</li>
+          <li>材料翻译公证</li>
+          <li>签证全程代办</li>
+          <li>住宿安排对接</li>
+          <li>行前全流程培训</li>
+        </ul>
+        <div class="pk-footer">报价：¥12,000-20,000</div>
+      </div>
+      <div class="package-card pk-c">
+        <div class="pk-head">
+          <div style="font-size:12px;opacity:.8;letter-spacing:1px;">VIP</div>
+          <h4 style="font-size:18px;margin-top:4px;">套餐 C · 管家</h4>
+        </div>
+        <ul class="pk-body">
+          <li>套餐B全部服务</li>
+          <li>文书润色 + 个人陈述</li>
+          <li>1年海外跟踪服务</li>
+          <li>签证续签代办</li>
+          <li>转学/升学指导</li>
+          <li>24h 紧急联系通道</li>
+        </ul>
+        <div class="pk-footer">报价：¥18,000-28,000</div>
+      </div>
+    </div>
+    <p style="font-size:11px;color:#666;margin-top:16px;line-height:1.8;"><strong>利润测算（按年签约20人）：</strong>套餐B为主力，假设平均签约价 ¥15,000，成本（翻译公证外包、系统维护、咨询时间成本）约 ¥3,000/人，单客毛利约 ¥12,000，年毛利约 ¥240,000。</p>
+  </div>
+</section>
+
+<!-- 销售话术 -->
+<section class="section">
+  <div class="section-header"><div class="ic">💬</div><h3>常见客户问题 · 应对话术</h3></div>
+  <div class="section-body">
+    <div class="script-grid">
+      <div class="script-card">
+        <div class="sc-scene">💰 关于价格</div>
+        <div class="sc-customer">"你们收费为什么比别的机构贵/便宜？"</div>
+        <div class="sc-say">"我们的价格是根据服务内容来定的。有些机构报价低，但不包含签证、不跟进海外——到后面各种加钱，性价比反而不高。我们是全流程一口价，服务到孩子入学为止，没有隐藏收费。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🏫 关于学校</div>
+        <div class="sc-customer">"新加坡这些私立学校靠谱吗？文凭回国认不认？"</div>
+        <div class="sc-say">"新加坡对私立教育管理非常严格，我们合作的13所院校全部持有EduTrust认证。学生拿的是英国/澳洲合作大学的学位，比如伯明翰大学、伦敦大学——这些都是中国教育部认可、留服认证的。孩子回国后可以享受留学生落户、购车免税等政策。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">📊 关于排名</div>
+        <div class="sc-customer">"这个学校QS排名太低了，我想要排名高的。"</div>
+        <div class="sc-say">"理解您的想法。不过QS排名只是一个维度。像SIM合作的是伦敦大学和伯明翰大学（QS45），Kaplan合作的都柏林大学（QS118），科廷大学（QS183）——这些文凭都很有含金量。关键是看孩子的兴趣方向和实际成绩，我们一对一帮您匹配。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🔒 关于安全</div>
+        <div class="sc-customer">"新加坡安全吗？孩子一个人去我不放心。"</div>
+        <div class="sc-say">"新加坡是全球治安最好的国家之一，法律非常严格，犯罪率极低。华人占比75%，语言、饮食、文化都跟国内接近，孩子适应起来很快。而且我们每年的年度服务有紧急联系通道，有任何情况第一时间协助处理。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🏠 关于住宿</div>
+        <div class="sc-customer">"孩子住哪里？住宿条件怎么样？"</div>
+        <div class="sc-say">"新加坡院校多数有校内宿舍或合作的学生公寓，也有寄宿家庭选项。我们会在孩子出发前就对接好住宿，标准间一般是双人间、空调和独立卫生间。住宿费约每月 400-800 新币（约 ¥2,000-4,000），在新加坡属于正常水平。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">📉 关于成绩</div>
+        <div class="sc-customer">"孩子成绩一般，英语也不好，能行吗？"</div>
+        <div class="sc-say">"这正是这个项目的优势所在。前两年在国内大外读，全程有老师带着学英语、打基础。英语单科90分以上（或雅思4.5）可以免入学考，即使不够也有我们专门的英语强化辅导。两年后孩子的英语和专业基础都打好了，再出国就轻松很多。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">⏰ 关于时间</div>
+        <div class="sc-customer">"现在报名还来得及吗？"</div>
+        <div class="sc-say">"报名截止日期是8月20日，但热门专业有可能会提前额满。建议尽快提交材料，我们这边同步帮您走流程，早报名早锁定名额。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🆚 关于对比</div>
+        <div class="sc-customer">"我同时也在看其他留学国家，新加坡有什么优势？"</div>
+        <div class="sc-say">"相比英美澳，新加坡的优势很明显：距离近（5小时直飞）、双语环境（不需要额外学第二外语）、性价比高（整体费用约为英美的50%-60%）。而且这个2+2项目前两年在国内读，省了至少一半生活费，毕业拿的学位跟直接去新加坡读四年是完全一样的。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">💼 关于就业</div>
+        <div class="sc-customer">"毕业以后好找工作吗？新加坡好留下来吗？"</div>
+        <div class="sc-say">"新加坡毕业生就业率一直很高，尤其是商科、IT、酒店管理方向。毕业后可以申请LTVP（长期访问准证）找工作，找到工作后雇主帮你办EP/S Pass。而且新加坡是全球金融中心和科技枢纽，跨国企业多，实习和就业机会很多。即使回国发展，有新加坡留学背景也很有竞争力。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">💳 关于学位含金量</div>
+        <div class="sc-customer">"这个学位回国找工作别人认可吗？"</div>
+        <div class="sc-say">"非常认可。我们合作的文凭来自英国/澳洲知名大学，比如伯明翰大学、伦敦大学、皇家墨尔本理工——这些在中国教育部留服中心全部可认证。认证后享受海归福利：一线城市落户、购车免税、创业补贴等。而且新加坡学历在国内的外企、银行、互联网公司认可度很高。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🍜 关于生活开销</div>
+        <div class="sc-customer">"在新加坡一个月要花多少钱？"</div>
+        <div class="sc-say">"住宿看类型——校内宿舍约400-600新币/月（¥2,000-3,000），校外合租约500-800新币（¥2,500-4,000）。日常吃饭如果在学校食堂或食阁，一顿3-6新币就够了，一个月伙食约300-400新币（¥1,500-2,000）。交通、通讯、日用品加起来，正常消费每月约1,000-1,500新币（¥5,000-8,000）。比英美便宜太多了。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🛠️ 关于打工</div>
+        <div class="sc-customer">"孩子在新加坡能打工吗？"</div>
+        <div class="sc-say">"持学生准证的外国学生，在公立大学或部分被批准的高等教育机构读书，每周可合法打工不超过16小时，假期不限。不过我们一般建议第一年先不打工——先把语言和专业基础打牢，学有余力再找实习。实习经历对未来在新加坡找工作帮助很大。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">📜 关于留学+移民</div>
+        <div class="sc-customer">"孩子毕业后能留在新加坡移民吗？"</div>
+        <div class="sc-say">"新加坡的路径很清晰：毕业→找雇主→申请EP/S Pass→工作满6个月可申请永久居民（PR）→满2年可申请公民。我们有毕业的学生工作两年就拿PR了。当然移民政策会变，但新加坡持续需要人才，尤其是金融、IT、工程方向。这条路走通的不在少数。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🎓 关于毕业难度</div>
+        <div class="sc-customer">"国外好毕业吗？会不会读不下来？"</div>
+        <div class="sc-say">"这个是很多家长担心的问题。我们的2+2项目优势就在这里——前两年在国内大外打好语言和专业基础，老师全程辅导，两年后再去新加坡就能跟上课程节奏。新加坡的课程设计非常贴合就业市场，不像某些国家纯写论文，只要按时上课、完成作业、考试合格，正常都能毕业。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🔄 关于转专业</div>
+        <div class="sc-customer">"选了专业以后想换怎么办？"</div>
+        <div class="sc-say">"一般情况下，同学院内转专业相对容易，需要在第一年内提出申请、GPA达标。跨学院转专业会难一些，需要满足目标专业的先修课要求。所以我们前期选校规划时会跟孩子深入沟通，尽量一步到位选对方向，减少后期调整的成本。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">⬅️ 关于退费</div>
+        <div class="sc-customer">"如果交了钱后不想去了，能退吗？"</div>
+        <div class="sc-say">"校方收费部分——学费、住宿费等，按照学校规定流程可以办理退费，一般扣除已发生的课程费用和固定的手续费。我们的中介服务费也按照合同约定的退费条款执行：服务未启动全额退，已启动按已完成服务的比例结算。所有条款在签约时都会写清楚，明明白白。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🚫 关于签证拒签</div>
+        <div class="sc-customer">"万一签证被拒了怎么办？钱不是白花了吗？"</div>
+        <div class="sc-say">"新加坡学生签证（Student Pass）通过率非常高，只要材料真实、没有犯罪记录、没有签证黑历史，基本没问题。我们办理这些年还没遇到无故被拒的情况。即使出现特殊情况，签证服务费我们是承诺拒签全额退的，学费部分学校也会按照退费政策办理。这个风险非常非常低。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🎁 关于奖学金</div>
+        <div class="sc-customer">"有没有奖学金可以申请？"</div>
+        <div class="sc-say">"新加坡院校有针对国际学生的奖学金，但竞争激烈，通常要求成绩优异（高考成绩/高中平均分高）、语言成绩突出（雅思6.0+）、有竞赛获奖或志愿者经历等。我们建议先以录取为目标，入学后在第一、第二学期表现优异，再申请校内奖学金，那个成功率更高。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">👨‍👩‍👧 关于陪读</div>
+        <div class="sc-customer">"家长能去新加坡陪读吗？"</div>
+        <div class="sc-say">"新加坡的陪读准证主要针对16岁以下低龄留学生，大学生家长陪读没有专门的政策通道。不过家长可以办理旅游签证（免签/电子签）来新加坡短期探望，一次可以待30天。真不放心的话，第一个月陪孩子过去安顿好再回来也很方便，5小时飞机随时可以飞。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">📚 关于国内阶段</div>
+        <div class="sc-customer">"前两年在国内学什么？跟直接去新加坡读有什么区别？"</div>
+        <div class="sc-say">"前两年在国内学的跟新加坡院校前两年的课程体系是衔接的——核心是英语强化加专业基础课。比如商科方向学经济学原理、管理学基础、商务英语；理工方向学高等数学、程序设计。好处是：第一，省了一半生活费；第二，有个适应过渡期；第三，毕业学位跟直接去读四年完全一样，不会有任何标注区别。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">✈️ 关于假期回国</div>
+        <div class="sc-customer">"孩子寒暑假能回来吗？机票贵不贵？"</div>
+        <div class="sc-say">"当然可以，新加坡每年两长一短三个假期：寒假在12月（约1个月），暑假在5-8月（约3个月），还有个2周左右的短假。北京、上海、广州、深圳、成都、厦门都有直飞新加坡的航班，提前订经济舱往返一般在¥2,000-4,000。逢年过节想家了随时飞，坐5个小时就到了，比欧美留学方便太多。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🧑‍🎓 关于大外</div>
+        <div class="sc-customer">"大连外国语大学是什么水平的学校？"</div>
+        <div class="sc-say">"大连外国语大学是辽宁省属重点大学，外语类全国排名前八，尤其日语和英语方向实力很强。国际教育学院专门做留学项目，有多年中外合作办学经验。孩子在国内两年就在大外旅顺校区就读，享受全日制本科同等的教学资源、图书馆、食堂——不是野鸡培训机构，是一本正规大学。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🤝 关于同行对比</div>
+        <div class="sc-customer">"别家中介说他们跟新加坡学校是'独家合作'，你们呢？"</div>
+        <div class="sc-say">"留学行业里'独家合作'这个词用得很泛滥，很多只是签了个招生代理协议就叫独家。我们是实实在在通过大连外国语大学国际教育学院的官方通道推荐的，校方正规项目，不是什么第三方代招。您可以跟任何一家对比——我们的13所院校清单、服务流程写得清清楚楚，不怕比。"</div>
+      </div>
+      <div class="script-card">
+        <div class="sc-scene">🧠 关于心理适应</div>
+        <div class="sc-customer">"孩子性格内向，从来没离开过家，会不会不适应？"</div>
+        <div class="sc-say">"这恰恰说明2+2项目是最适合的路径。前两年在国内大外住校，有个'半独立'的过渡期——离家但不离国，慢慢学会自理。两年后去新加坡，华人文化占比75%，语言、饮食、节日都跟国内很接近，不像去欧美有巨大文化冲击。我们也会帮孩子提前对接在新加坡的学长学姐圈子，一去就有社交圈，不孤单。"</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 录取条件 -->
+<section class="section">
+  <div class="section-header"><div class="ic">📋</div><h3>录取条件与操作指南</h3></div>
+  <div class="section-body">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <div>
+        <h4 style="font-size:14px;font-weight:800;color:#0a2647;margin-bottom:10px;">招生对象</h4>
+        <ul style="font-size:12.5px;color:#444;line-height:2.2;list-style:none;padding:0;">
+          <li>✓ 出国前需年满16岁</li>
+          <li>✓ 普通中职 / 高中 / 国际高中或同等学历</li>
+          <li>✓ 部分海外院校需高三在读或往届生</li>
+          <li>✓ 部分海外院校初中毕业可申请</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-size:14px;font-weight:800;color:#0a2647;margin-bottom:10px;">免考条件</h4>
+        <ul style="font-size:12.5px;color:#444;line-height:2.2;list-style:none;padding:0;">
+          <li>✓ 英语单科 ≥ 90分（满分150）</li>
+          <li>✓ 或 雅思 ≥ 4.5</li>
+          <li>✓ 满足任一项免综合测评考试</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-size:14px;font-weight:800;color:#0a2647;margin-bottom:10px;">报名时间</h4>
+        <p style="font-size:12.5px;color:#444;line-height:2;"><strong>即日起至2026年8月20日</strong>（额满即止）</p>
+      </div>
+      <div>
+        <h4 style="font-size:14px;font-weight:800;color:#0a2647;margin-bottom:10px;">所需材料</h4>
+        <p style="font-size:12.5px;color:#444;line-height:2;">身份证、高中毕业证、高考成绩单、英语成绩证明</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="ft-company">LazyFirst · studyAbroad 内部资料</div>
+  <div class="ft-powered">Powered by LazyFirst</div>
+  <div class="ft-divider"></div>
+  <div class="ft-copy">内部资料 · 仅限授权人员查阅 · 严禁外传</div>
+</footer>
+
+</div><!-- /protected-content -->
+
+<script src="../js/auth.js"></script>
+</body>
+</html>
